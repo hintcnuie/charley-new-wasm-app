@@ -1,7 +1,7 @@
 {
-  "name": "create-wasm-app",
+  "name": "charley-rust-wasm-app",
   "version": "0.1.0",
-  "description": "create an app to consume rust-generated wasm packages",
+  "description": "create an Web app to consume rust-generated wasm packages",
   "main": "index.js",
   "bin": {
     "create-wasm-app": ".bin/create-wasm-app.js"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rustwasm/create-wasm-app.git"
+    "url": "git//github.com/rustwasm/create-wasm-app.git"
   },
   "keywords": [
     "webassembly",
@@ -27,10 +27,12 @@
   },
   "homepage": "https://github.com/rustwasm/create-wasm-app#readme",
   "devDependencies": {
-    "hello-wasm-pack": "^0.1.0",
+    "copy-webpack-plugin": "^5.0.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5",
-    "copy-webpack-plugin": "^5.0.0"
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "charley-wasm": "^0.1.3"
   }
 }
